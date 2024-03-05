@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './Header';
+
 
 
 export default function App() {
 
-  let fruits = [
+  let products = [
     {
         name: "coffee",
         description: "Mind Refreshment.",
@@ -47,21 +47,26 @@ export default function App() {
     },
     
 ];
-  return (
-  <div>
-    <Header/>
-      {fruits.map((value,index)=>(
-          <div className='main1'>
-            <div className='container'>
-              <p><img src={value.image} width={175} height={150}></img></p>
-              <p>{value.name}</p>
-              <p>{value.description}</p>
-              <p>{value.price}</p>
-              </div>
-            </div> 
+  
+let elements = [];
+products.forEach((product, index) => {
+    elements.push(
+        <div key={index} className='container'>
+            <p><img src={product.image} alt={product.name} style={{ height:'150px', width:'150px'}}/></p>
+            <p>{product.name}</p>
+            <p>{product.price}</p>
+            <button>Add</button>
+        </div>
+    );
+});
 
-          ))
-      }
-  </div>
-)
-    }
+return (
+    <div>
+      <center><h1>Coffee Shop</h1></center> 
+      <marque><h3><i>Welcome</i></h3></marque><hr></hr>
+        <div className='main1'> 
+            {elements}
+        </div>  
+    </div>
+);
+}
