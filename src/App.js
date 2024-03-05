@@ -48,6 +48,7 @@ export default function App() {
 ];
   return (
   <div>
+    <Header/>
       {fruits.map((value,index)=>(
           <div className='container'>
               <p><img src={value.image} width={175} height={150}></img></p>
@@ -60,14 +61,4 @@ export default function App() {
       }
   </div>
 )
-  
-   return (
-    <div>
-      <center><h1>SAF</h1></center> 
-      <marque><h3><i>Enjoy the date</i></h3></marque><hr></hr>
-        <div className='main1'> 
-        </div>  
-    </div>
-);
-}
-
+    }
