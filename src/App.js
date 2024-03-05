@@ -2,6 +2,7 @@ import React from 'react'
 
 
 export default function App() {
+
   let fruits = [
     {
         name: "coffee",
@@ -43,12 +44,13 @@ export default function App() {
         price: 3,
         image:"https://food-images.files.bbci.co.uk/food/recipes/cupcakes_93722_16x9.jpg",
     },
+    
 ];
   return (
   <div>
       {fruits.map((value,index)=>(
           <div class="container">
-              <div><img src={value.image} width={175} height={150} alt='fruitimg'></img></div>
+              <div><img src={value.image} width={175} height={150}></img></div>
               <div id="fname">{value.name}</div>
               <div>{value.description}</div>
               <div>{value.price}</div>
