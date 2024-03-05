@@ -52,10 +52,12 @@ export default function App() {
     <Header/>
       {fruits.map((value,index)=>(
           <div className='container'>
+            <div className='main1'>
               <p><img src={value.image} width={175} height={150}></img></p>
               <p>{value.name}</p>
               <p>{value.description}</p>
               <p>{value.price}</p>
+              </div>
             </div> 
 
           ))
