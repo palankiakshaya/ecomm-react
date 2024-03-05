@@ -36,6 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.main{
+  width: 300px;
+  padding: 5px;
+   margin: 10px;
+}
 .container{
       display: flex;
       flex-direction: row;
