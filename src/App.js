@@ -62,8 +62,8 @@ products.forEach((product, index) => {
 
 return (
     <div>
-      <center><h1>Coffee Shop</h1></center> 
-      <marque><h3><i>Welcome</i></h3></marque><hr></hr>
+      <center><h1>SAF</h1></center> 
+      <marquee><h3><i>Enjoy the Food</i></h3></marquee><hr></hr>
         <div className='main1'> 
             {elements}
         </div>  
