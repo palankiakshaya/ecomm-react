@@ -43,11 +43,11 @@
   margin: 0;
   width: 100%;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .container{
-  border: solid 15px gray;
+  border: solid 10px pink;
   height: 270px;
   width: 270px;
   padding: 20px;
