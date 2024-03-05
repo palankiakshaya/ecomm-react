@@ -51,7 +51,7 @@ export default function App() {
       {fruits.map((value,index)=>(
           <div class="container">
               <div><img src={value.image} width={175} height={150}></img></div>
-              <div id="fname">{value.name}</div>
+              <div>{value.name}</div>
               <div>{value.description}</div>
               <div>{value.price}</div>
               <div><button >ADD</button></div>
