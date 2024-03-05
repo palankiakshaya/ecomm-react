@@ -49,18 +49,26 @@ export default function App() {
   return (
   <div>
       {fruits.map((value,index)=>(
-          <div>
-              <div className='main'><img src={value.image} width={175} height={150}></img></div>
-              <div className='container'>
-              <div>{value.name}</div>
-              <div>{value.description}</div>
-              <div>{value.price}</div>
-              <div><button >ADD</button></div>
-              </div>
+          <div className='container'>
+              <div><img src={value.image} width={175} height={150}></img></div><br></br>
+              <div>{value.name}</div><br></br>
+              <div>{value.description}</div><br></br>
+              <div>{value.price}</div><br></br>
+         
           </div> 
 
           ))
       }
   </div>
 )
-  }
+  
+   return (
+    <div>
+      <center><h1>SAF</h1></center> 
+      <marque><h3><i>Enjoy the date</i></h3></marque><hr></hr>
+        <div className='main1'> 
+        </div>  
+    </div>
+);
+}
+
