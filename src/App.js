@@ -54,6 +54,7 @@ products.forEach((product, index) => {
         <div key={index} className='container'>
             <p><img src={product.image} alt={product.name} style={{ height:'150px', width:'150px'}}/></p>
             <p>{product.name}</p>
+            <p>{product.description}</p>
             <p>{product.price}</p>
             <button>Add</button>
         </div>
