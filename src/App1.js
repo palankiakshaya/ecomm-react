@@ -5,6 +5,7 @@ export default function App1() {
   const [access, Access] = useState({ access: "", className: "" });
 
     const f1 = () => {
+       // trim() removes whitespace characters from the beginning and end of a string
         let uname = document.getElementById('s1').value.trim();
         let pass = document.getElementById('s2').value.trim();
               console.log(uname)
