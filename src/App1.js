@@ -5,11 +5,11 @@ export default function App1() {
   const [access, Access] = useState({ access: "", className: "" });
 
     const f1 = () => {
-        let name = document.getElementById('t1').value.trim();
-        let pass = document.getElementById('t2').value.trim();
-              console.log(name)
+        let uname = document.getElementById('s1').value.trim();
+        let pass = document.getElementById('s2').value.trim();
+              console.log(uname)
               console.log(pass)
-        if (name === 'john' && pass === 'pass1234') {
+        if (uname === 'john' && pass === 'pass1234') {
             Access({ access: 'Access granted', className: 'success' });
         } else {
             Access({ access: 'Access Denied', className: 'fail' });
@@ -19,10 +19,10 @@ export default function App1() {
     <div>
         <h2>Login Form</h2>
         <p>
-            <input id='t1' type='text' placeholder='Enter username' />   
+            <input id='s1' type='text' placeholder='Enter username' />   
         </p>
         <p>
-           <input id='t2' type='password' placeholder='password' /> 
+           <input id='s2' type='password' placeholder='password' /> 
         </p>
             <button onClick={f1}>Login</button>
             <div className={access.className}>{access.access}</div>
