@@ -54,3 +54,9 @@
   margin: 30px;
   border-radius: 20px;
 }
+.success{
+  color: green;
+}
+.fail{
+  color: red;
+}
